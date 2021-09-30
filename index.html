@@ -6,7 +6,7 @@
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Alex Baker</title>
-    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <link rel="icon" href="img/fav.ico" type="image/x-icon">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- Bootstrap -->
@@ -38,8 +38,8 @@
     <div class="container-fluid d-flex justify-content-center p-0">
         <!-- box header -->
         <header class="box-header ">
-            <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+            <div class="box-logo ">
+                <img src="img/logo.png" width="180vw" alt="Logo">
             </div>
         </header>
         <!-- end box header -->
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="mouse">
+            <div class="mouse mt-3">
                 <div class="scroll"></div>
             </div>
         </section>
@@ -74,11 +74,16 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
+            <div class="class">
+                
+            </div>
             <span class="text-muted" id="Copyright">
                 <section id="year"></section>
                 <script>
                     document.getElementById("Copyright").innerHTML =
-                        `Copyright &copy;&nbsp;${new Date().getFullYear()} Alex Baker`
+                        `<img src="/img/logo_black.png" width="40vw" alt="" class="class">&nbsp;&nbsp;&nbsp;Copyright
+                        &copy;&nbsp;${new
+                        Date().getFullYear()} Alex Baker`
                 </script>
             </span>
         </div>
@@ -107,23 +112,7 @@
     <!--  custom script -->
     <script src="js/custom.js"></script>
 
-    <!-- google analytics  -->
-    <!-- <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-76796224-1', 'auto');
-        ga('send', 'pageview');
-    </script> -->
+    
 
 </body>
 
