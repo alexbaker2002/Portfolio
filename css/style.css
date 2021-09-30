@@ -281,13 +281,14 @@ b i:last-child {
     position: absolute;
     width: 22px;
     height: 42px;
-    bottom: 40px;
+    bottom: 10px;
     left: 50%;
     margin-left: -12px;
     border-radius: 15px;
     border: 4px solid #ffc107;
     -webkit-animation: intro 1s;
     animation: intro 1s;
+    margin-top:50px;
 }
 
 .scroll {
