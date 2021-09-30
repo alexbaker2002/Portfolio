@@ -243,7 +243,12 @@ h5 {
 .box-logo {
     display: block;
     padding: 20px;
+    
 }
+
+
+
+
 
 
 
@@ -279,6 +284,10 @@ b i:last-child {
     line-height: 1.7
 }
 
+.title{
+margin-top: 15rem;
+
+}
 
 /* mouse effect */
 
@@ -956,6 +965,10 @@ textarea:focus {
 @media (orientation: landscape) and (max-width: 991px) {
     .box-logo {
         display: none;
+    }
+    .title {
+        margin-top: 3em;
+
     }
 }
 
