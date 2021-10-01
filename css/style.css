@@ -244,7 +244,7 @@ h5 {
 .box-logo {
     display: block;
     padding: 20px;
-    
+
 }
 
 
@@ -285,8 +285,8 @@ b i:last-child {
     line-height: 1.7
 }
 
-.title{
-margin-top: 15rem;
+.title {
+    margin-top: 15rem;
 
 }
 
@@ -699,19 +699,25 @@ footer img {
 .cd-top {
     display: inline-block;
     height: 40px;
-    width: 40px;
+    width: 20vw;
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     line-height: 40px;
     font-size: 20px;
-    right: 10px;
+    right: 20px;
     text-align: center;
     color: #fff;
-    background: rgba(255, 191, 0, 0.8);
+    background: #ffc107;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
+    text-decoration: none;
+}
+
+.cd-top a:visited,
+a:link {
+    color: var(--dark);
 }
 
 .cd-top.cd-is-visible,
@@ -963,14 +969,34 @@ textarea:focus {
 
 /* Responsive media queries
 ==================================================*/
+/*Mobile Landscape*/
 @media (orientation: landscape) and (max-width: 991px) {
     .box-logo {
         display: none;
     }
+
     .title {
         margin-top: 3em;
 
     }
+}
+
+@media (orientation: portrait) and (max-device-width: 520px) {
+    .title {
+        display: none;
+    }
+ .bgPhoto {
+     background-color: rgba(118, 126, 0, 0.472);
+     background-blend-mode: multiply;
+ }
+    .box-logo {
+        width: 100vw;
+        margin-top: 10vh;
+        
+    }
+ 
+
+   
 }
 
 @media (max-width: 991px) {
@@ -1023,6 +1049,8 @@ textarea:focus {
     .portfolio .categories-grid .categories ul li {
         float: none;
     }
+
+
 }
 
 @media only screen and (max-width: 520px) {
