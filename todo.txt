@@ -1,0 +1,4 @@
+responsive 
+fix portfolio on mobile.... slider left right containing projects overflow hidden
+        same with challenges
+        
