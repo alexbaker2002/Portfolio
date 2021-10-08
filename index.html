@@ -33,7 +33,7 @@ Removed Menu
 </head>
 
 <body>
-
+    <div class="bgPhoto"></div>
     <!-- Preloader -->
     <div id="preloader">
         <div class="pre-container">
@@ -49,20 +49,24 @@ Removed Menu
     <div class="scroll-container">
 
         <!--LANDING PAGE-->
-        <div id="landingID" class="container-fluid d-flex justify-content-center p-0 scroll-area   ">
+        <div id="landingID" class="container-fluid d-flex justify-content-center p-0 scroll-area  ">
             <!-- box-intro -->
-            <section class="box-intro bgPhoto ">
+            <section class="box-intro  ">
                 <img class="box-logo" src="img/logo.png" width="150vw" alt="Logo">
-                <div class="title">
-                    <h1 class="box-headline ">
-                        <span class="box-words-wrapper text-center ">
-                            <b class="is-visible text-center">Alex&nbsp;Baker</b>
-                        </span>
-                    </h1>
-                    <div class="container-fluid px-l-5 px-xl-5 px-xxl-5 p-0 d-flex justify-content-center">
-                        <h5 class="callText px-3">.NET FULL STACK WEB DEVELOPER</h5>
+                <div class="titleContainer">
+                    <div class="title">
+                        <h1 class="box-headline ">
+                            <span class="box-words-wrapper text-center ">
+                                <b class="is-visible text-center">Alex&nbsp;Baker</b>
+                            </span>
+                        </h1>
+                        <div class="container-fluid px-l-5 px-xl-5 px-xxl-5 p-0 d-flex justify-content-center">
+                            <h5 class="callText px-3">.NET FULL STACK WEB DEVELOPER</h5>
+                        </div>
                     </div>
+
                 </div>
+
                 <!-- <a href="#portfolioID" class="mouse mt-3">
                             <div class="scroll"></div>
                         </a> -->
@@ -70,76 +74,171 @@ Removed Menu
             <!-- end box-intro -->
         </div>
         <!-- end Landing Container -->
-
-        <div id="portfolioID" class="scroll-area container-fluid d-flex text-dark flex-column">
-            <div class="container-fluid d-flex flex-column justify-content-center text-center overflow-hidden h-100">
-                Portfolio
-                <div
-                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 d-flex justify-content-center">
-                    <div class="col">
-                        <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
-                            <img src="/img/portfolio/bugtrack.webp" class="card-img-top" alt="bug tracker">
-                            <div class="card-body ">
-                                <h5 class="card-title">Bug Tracker</h5>
-                                <p class="card-text">.NET MVC APPLICATION</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-primary me-2">View Live</a>
-                                    <a href="#" class="btn btn-dark ">GitHub</a>
+        <!--Portfolio Projects-->
+        <div id="portfolioID" class="scroll-area container-fluid d-flex text-dark flex-column glassContainer">
+            <div class="contentContainer">
+                <div class="container-fluid d-flex flex-column justify-content-center text-center overflow-scroll ">
+                    <h1>Portfolio</h1>
+                    <div
+                        class="row row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 d-flex flex-columns justify-content-center">
+                        <div class="col col-sm-12 ">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/bugtrack.webp" class="card-img-top" alt="bug tracker">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Bug Tracker</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/blog.webp" class="card-img-top" alt="blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Address Book</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
-                            <img src="/img/portfolio/blog.webp" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog</h5>
-                                <p class="card-text">.NET MVC APPLICATION</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-primary me-2">View Live</a>
-                                    <a href="#" class="btn btn-dark ">GitHub</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!--Portfolio Projects-->
+        <div id="codingchallengesID" class="scroll-area text-dark container-fluid d-flex flex-column glassContainer ">
+            <div class="contentContainer">
+                <h1 class="container-fluid d-flex justify-content-center text-light align-content-center p-1">Coding
+                    Challenges</h1>
+                <div class="container-fluid challengesContainer d-flex justify-content-center align-content-center">
+                    <div
+                        class="row row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 d-flex flex-columns justify-content-center">
+                        <div class="col col-sm-12 ">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/bugtrack.webp" class="card-img-top" alt="bug tracker">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Bug Tracker</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col ">
-                        <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
-                            <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
-                            <div class="card-body">
-                                <h5 class="card-title">Address Book</h5>
-                                <p class="card-text">.NET MVC APPLICATION</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-primary me-2">View Live</a>
-                                    <a href="#" class="btn btn-dark ">GitHub</a>
+                        <div class="col col-sm-12">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/blog.webp" class="card-img-top" alt="blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
                                 </div>
-
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Address Book</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Address Book</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Address Book</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Address Book</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Address Book</h5>
+                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-
-
-
-
-        </div>
-
-
-
-        <div id="codingchallengesID" class="scroll-area bg-dark container-fluid d-flex flex-column h-100  ">
-            Coding Challenges
-
-
-
         </div>
 
 
 
 
         <div id="skillsID" class="scroll-area container-fluid text-dark p-0 ">Skills</div>
-        <div id="educationID" class="scroll-area container-fluid bg-dark text-light p-0  ">Education</div>
-        <div id="contactID" class="scroll-area container-fluid text-dark p-0 footerContainer">
+        <div id="educationID" class="scroll-area container-fluid text-dark text-light p-0  ">Education</div>
+        <div id="contactID" class="scroll-area container-fluid text-dark p-0 footerContainer ">
             Contact & Resume
             <div class="container-fluid sitesContainer">
                 <div class="container-fluid d-flex justify-content-center">
@@ -171,7 +270,8 @@ Removed Menu
             <!-- back to top -->
         </div>
     </div>
-    </div>
+
+
 
     <!--End Scroll Container-->
 

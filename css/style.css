@@ -39,7 +39,8 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: #999
+    color: #999;
+
 }
 
 
@@ -63,6 +64,7 @@ body {
 }
 
 a {
+    
     -webkit-transition: all .3s;
     transition: all .3s
 }
@@ -207,12 +209,28 @@ h5 {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*linear-gradient(rgb(255, 227, 68), rgba(253, 253, 253, 0.424))*/
 .bgPhoto {
-    background-image: linear-gradient(rgb(255, 227, 68), rgba(253, 253, 253, 0.424)),
-        url("/img/bg.jpg");
+    background-image: url("/img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    display: block;
+
+
+
+}
+
+.titleContainer {
+    background: #ffffff70;    
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
 }
 
@@ -220,6 +238,7 @@ h5 {
     height: 80px;
     background: transparent;
     box-shadow: none;
+
 }
 
 .box-header {
@@ -252,11 +271,30 @@ h5 {
     display: block;
     padding: 20px;
 
+}
+
+
+.glassContainer {
+    z-index: -10;
+    color: #000;
+    width: 100vw;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(4px);
+     -webkit-backdrop-filter: blur(4px);
 
 }
 
 
 
+
+.contentContainer {
+    z-index: 1;
+    position: relative;
+   overflow: scroll;
+
+
+}
 
 
 
@@ -296,7 +334,6 @@ h5 {
 
 .title {
     margin-top: 15rem;
-
 }
 
 /* mouse effect */
@@ -438,14 +475,15 @@ footer {
 .sitesContainer {
     position: absolute;
     bottom: 50px;
- 
+
 }
 
-.sitesContainer .sitesWrapper{
+.sitesContainer .sitesWrapper {
     margin-left: auto;
     margin-right: auto;
 
 }
+
 .sitesContainer img {
     width: auto;
     height: 50px;
@@ -467,10 +505,13 @@ footer {
     height: 100vh;
 
 
+
 }
 
 .scroll-area {
     scroll-snap-align: start;
+
+
 }
 
 .scroll-container,
@@ -499,6 +540,7 @@ footer {
     opacity: 1 !important;
 }
 
+/*========================================*/
 
 
 /* Responsive media queries
@@ -513,6 +555,7 @@ footer {
         margin-top: 3em;
 
     }
+
 }
 
 @media (orientation: portrait) and (max-device-width: 520px) {
@@ -521,7 +564,7 @@ footer {
     }
 
     .bgPhoto {
-        background-color: rgba(118, 126, 0, 0.472);
+        background-color: rgba(192, 195, 145, 0.472);
         background-blend-mode: multiply;
     }
 
@@ -530,6 +573,12 @@ footer {
         margin-top: 10vh;
 
     }
+
+    .carousel-item {
+        height: 85vh;
+
+    }
+
 
 }
 
@@ -615,5 +664,5 @@ footer {
         font-size: 30px;
         line-height: 30px;
     }
-  
+
 }
