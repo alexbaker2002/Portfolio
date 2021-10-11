@@ -222,9 +222,6 @@ h5 {
     right: 0;
     z-index: -100;
     display: block;
-
-
-
 }
 
 .titleContainer {
@@ -295,9 +292,20 @@ h5 {
 
 
 }
+/*============================================*/
+.sectionHeader{
 
+display: inline-block;
+vertical-align: top;
 
+}
 
+.cardsContainer{
+    display: inline-block;
+    vertical-align: center;
+}
+
+/*============================================*/
 
 
 /* box-intro
@@ -448,7 +456,7 @@ h5 {
 footer {
     padding: 5px 0;
     text-align: center;
-    background: #f5f5f5;
+   
     font-size: 20px;
     position: absolute;
     bottom: 0px;

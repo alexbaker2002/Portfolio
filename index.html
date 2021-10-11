@@ -49,10 +49,11 @@ Removed Menu
     <div class="scroll-container">
 
         <!--LANDING PAGE-->
-        <div id="landingID" class="container-fluid d-flex justify-content-center p-0 scroll-area  ">
+        <div id="landingID" class="container-fluid d-flex justify-content-center p-0 scroll-area hidden ">
             <!-- box-intro -->
             <section class="box-intro  ">
                 <img class="box-logo" src="img/logo.png" width="150vw" alt="Logo">
+
                 <div class="titleContainer">
                     <div class="title">
                         <h1 class="box-headline ">
@@ -64,9 +65,7 @@ Removed Menu
                             <h5 class="callText px-3">.NET FULL STACK WEB DEVELOPER</h5>
                         </div>
                     </div>
-
                 </div>
-
                 <!-- <a href="#portfolioID" class="mouse mt-3">
                             <div class="scroll"></div>
                         </a> -->
@@ -75,47 +74,48 @@ Removed Menu
         </div>
         <!-- end Landing Container -->
         <!--Portfolio Projects-->
-        <div id="portfolioID" class="scroll-area container-fluid d-flex text-dark flex-column glassContainer">
-            <div class="contentContainer">
+        <div id="portfolioID" class="scroll-area container-fluid d-flex text-dark flex-column">
+            <div class="contentContainer border border-2 border-danger h-100">
                 <div class="container-fluid d-flex flex-column justify-content-center text-center overflow-scroll ">
-                    <h1>Portfolio</h1>
-                    <div
-                        class="row row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 d-flex flex-columns justify-content-center">
-                        <div class="col col-sm-12 ">
-                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
-                                <img src="/img/portfolio/bugtrack.webp" class="card-img-top" alt="bug tracker">
-                                <div class="card-body ">
-                                    <h5 class="card-title">Bug Tracker</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
-                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                    <h1 class="glassContainer sectionHeader">Portfolio</h1>
+                    <div class="container-fluid cardsContainer border border-3 border-primary">
+                        <div class="row row-cols-md-3 d-flex flex-columns justify-content-center">
+                            <div class="col ">
+                                <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                    <img src="/img/portfolio/bugtrack.webp" class="card-img-top" alt="bug tracker">
+                                    <div class="card-body ">
+                                        <h5 class="card-title">Bug Tracker</h5>
+                                        <p class="card-text">.NET MVC APPLICATION</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary me-2">View Live</a>
+                                            <a href="#" class="btn btn-dark ">GitHub</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col col-sm-12">
-                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
-                                <img src="/img/portfolio/blog.webp" class="card-img-top" alt="blog">
-                                <div class="card-body">
-                                    <h5 class="card-title">Blog</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
-                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                            <div class="col">
+                                <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                    <img src="/img/portfolio/blog.webp" class="card-img-top" alt="blog">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Blog</h5>
+                                        <p class="card-text">.NET MVC APPLICATION</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary me-2">View Live</a>
+                                            <a href="#" class="btn btn-dark ">GitHub</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
-                                <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
-                                <div class="card-body">
-                                    <h5 class="card-title">Address Book</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
-                                        <a href="#" class="btn btn-dark ">GitHub</a>
+                            <div class="col">
+                                <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                                    <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Address Book</h5>
+                                        <p class="card-text">.NET MVC APPLICATION</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary me-2">View Live</a>
+                                            <a href="#" class="btn btn-dark ">GitHub</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -123,40 +123,41 @@ Removed Menu
                     </div>
                 </div>
             </div>
-
-
         </div>
 
 
         <!--Portfolio Projects-->
-        <div id="codingchallengesID" class="scroll-area text-dark container-fluid d-flex flex-column glassContainer ">
-            <div class="contentContainer">
-                <h1 class="container-fluid d-flex justify-content-center text-light align-content-center p-1">Coding
+        <div id="codingchallengesID"
+            class="scroll-area text-dark container-fluid d-flex flex-column justify-content-center ">
+            <div class="contentContainer h-100">
+                <h1 class="glassContainer text-center sectionHeader">Coding
                     Challenges</h1>
                 <div class="container-fluid challengesContainer d-flex justify-content-center align-content-center">
-                    <div
-                        class="row row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 d-flex flex-columns justify-content-center">
-                        <div class="col col-sm-12 ">
-                            <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
+                    <div class="row d-flex flex-columns justify-content-center">
+                        <div class="col  ">
+                            <div class="card shadow  container-fluid d-flex flex-column justify-content-center text-center overflow-scroll  p-3 mb-5 bg-body rounded mx-auto my-auto"
+                                style="width:20rem;">
                                 <img src="/img/portfolio/bugtrack.webp" class="card-img-top" alt="bug tracker">
                                 <div class="card-body ">
-                                    <h5 class="card-title">Bug Tracker</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">Superdog Events</h5>
+                                    <p class="card-text">JavaScript Challenge</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbsuperdog.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-12">
+                        <div class="col">
                             <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
                                 <img src="/img/portfolio/blog.webp" class="card-img-top" alt="blog">
                                 <div class="card-body">
-                                    <h5 class="card-title">Blog</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">TacoCat</h5>
+                                    <p class="card-text">JavaScript Challenge</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbtacocat.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
@@ -166,10 +167,11 @@ Removed Menu
                             <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
                                 <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
                                 <div class="card-body">
-                                    <h5 class="card-title">Address Book</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">Bootstrap Grids</h5>
+                                    <p class="card-text">HTML & Bootstrap</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbbsgrids.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
@@ -179,10 +181,11 @@ Removed Menu
                             <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
                                 <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
                                 <div class="card-body">
-                                    <h5 class="card-title">Address Book</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">FizzBuzz</h5>
+                                    <p class="card-text">JavaScript Challenge</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbfizzbuzz.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
@@ -192,10 +195,11 @@ Removed Menu
                             <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
                                 <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
                                 <div class="card-body">
-                                    <h5 class="card-title">Address Book</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">Loan Shark</h5>
+                                    <p class="card-text">JavaScript Challenge</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbloanshark.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
@@ -205,10 +209,11 @@ Removed Menu
                             <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
                                 <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
                                 <div class="card-body">
-                                    <h5 class="card-title">Address Book</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">The Hundo</h5>
+                                    <p class="card-text">JavaScript Challenge</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbhundo.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
@@ -218,10 +223,11 @@ Removed Menu
                             <div class="card shadow p-3 mb-5 bg-body rounded mx-auto my-auto" style="width:20rem;">
                                 <img src="/img/portfolio/addressbook.webp" class="card-img-top" alt="addressbook">
                                 <div class="card-body">
-                                    <h5 class="card-title">Address Book</h5>
-                                    <p class="card-text">.NET MVC APPLICATION</p>
+                                    <h5 class="card-title">Rewind</h5>
+                                    <p class="card-text">JavaScript Challenge</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary me-2">View Live</a>
+                                        <a href="https://devbrewind.netlify.app/" class="btn btn-primary me-2">View
+                                            Live</a>
                                         <a href="#" class="btn btn-dark ">GitHub</a>
                                     </div>
                                 </div>
@@ -236,10 +242,8 @@ Removed Menu
 
 
 
-        <div id="skillsID" class="scroll-area container-fluid text-dark p-0 ">Skills</div>
-        <div id="educationID" class="scroll-area container-fluid text-dark text-light p-0  ">Education</div>
         <div id="contactID" class="scroll-area container-fluid text-dark p-0 footerContainer ">
-            Contact & Resume
+            <h1 class="glassContainer text-center">Contact & Resume</h1>
             <div class="container-fluid sitesContainer">
                 <div class="container-fluid d-flex justify-content-center">
                     <div class="sitesWrapper">
@@ -251,7 +255,7 @@ Removed Menu
                 </div>
             </div>
             <!-- footer -->
-            <footer class="footer">
+            <footer class="footer glassContainer">
                 <div class="container ">
                     <span class="text-muted" id="Copyright">
                         <section id="year"></section>
